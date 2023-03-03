@@ -1,13 +1,14 @@
 import { RiHome6Line, RiPercentLine, RiMailLine, RiNotification4Line, RiSettings4Line, RiLogoutBoxRLine } from 'react-icons/ri'
 import { CgCoffee } from 'react-icons/cg'
 
-
-function Sidebar() {
+const Sidebar = (props) => {
+  const { showMenu } = props;
   return (
-    <div className='bg-[#1F1D2B] fixed lg:left-0 top-0 w-28 h-full  text-white flex flex-col justify-between py-6 rounded-tr-xl rounded-br-xl -left-full '>
+    <div className={`bg-[#1F1D2B] fixed lg:left-0 top-0 w-28 h-full  text-white flex flex-col justify-between py-6 rounded-tr-xl rounded-br-xl -left-full z-10 
+ ${showMenu ? 'left-0 transition-all duration-500 ease-in-out' : '-left-full transition-all duration-500 ease-in-out'}`}
+    
+    >
       <div>
-
-
         <ul className='pl-4'>
           <li >
             <h1 className='text-2xl text-gray-300 uppercase font-bold text-center my-5'>logo</h1>
