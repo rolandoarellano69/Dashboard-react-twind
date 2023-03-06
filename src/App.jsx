@@ -2,9 +2,10 @@ import Sidebar from "./components/shared/Sidebar"
 import { useState } from "react"
 import { RiMenu2Fill, RiHome3Line, RiFileList3Line, RiSettings4Line,RiCloseLine } from "react-icons/ri"
 import { CgCoffee } from "react-icons/cg"
+import Header from "./components/shared/Header" 
 function App() {
   const [showMenu, setShowMenu] = useState(false)
-  const [showOrder, setShowOrder] = useState(false)
+
 
   const toggleMenu = () => {
 
@@ -33,6 +34,14 @@ function App() {
           
         </button>
       </nav>
+      <main className="lg:pl-28 grid grid-cols-1 lg:grid-cols-8 ">
+        <div className="lg:col-span-6 ">
+          <Header />
+        </div>
+        <div className="lg:col-2  fixed lg:static right-0">
+          Carrito
+        </div>
+      </main>
     </div>
   )
 }
