@@ -6,7 +6,7 @@ const Sidebar = (props) => {
   return (
     <div className={`bg-[#1F1D2B] fixed lg:left-0 top-0 w-28 h-full  text-white flex flex-col justify-between py-6 rounded-tr-xl rounded-br-xl -left-full z-10 
  ${showMenu ? 'left-0 transition-all duration-500 ease-in-out' : '-left-full transition-all duration-500 ease-in-out'}`}
-    
+
     >
       <div>
         <ul className='pl-4'>

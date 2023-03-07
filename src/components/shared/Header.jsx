@@ -7,7 +7,7 @@ function Header() {
     <header className="p-4">
       {/*header*/}
 
-      <div className='flex flex-col gap-4'>
+      <div className='flex flex-col gap-4 mb-6'>
 
         <div>
           <h1 className='text-2xl text-gray-300'>COFFI APP</h1>
@@ -23,10 +23,8 @@ function Header() {
           </div>
         </form>
       </div>
-
       {/*Tabs*/}
       <Tabs />
-      
     </header>
 
 
