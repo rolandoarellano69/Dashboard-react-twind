@@ -4,6 +4,8 @@ import { RiMenu2Fill, RiHome3Line, RiFileList3Line, RiSettings4Line, RiCloseLine
 import { CgCoffee } from "react-icons/cg"
 import Header from "./components/shared/Header"
 import Car from "./components/shared/Car"
+import MenuCoffee from "./components/shared/MenuCoffee"
+import Tabs from "./components/shared/Tabs"
 
 
 function App() {
@@ -40,10 +42,14 @@ function App() {
       <main className="lg:pl-28 grid grid-cols-1 lg:grid-cols-8 ">
         <div className="lg:col-span-6 ">
           <Header />
-          
-     
+
+          <MenuCoffee />
         </div>
         <Car />
+
+
+
+
       </main>
     </div>
   )
