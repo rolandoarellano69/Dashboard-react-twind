@@ -6,6 +6,7 @@ import Header from "./components/shared/Header"
 import Car from "./components/shared/Car"
 import MenuCoffee from "./components/shared/MenuCoffee"
 import Tabs from "./components/shared/Tabs"
+import Content from "./components/shared/Content"
 
 
 function App() {
@@ -39,17 +40,17 @@ function App() {
 
         </button>
       </nav>
-      <main className="lg:pl-28 grid grid-cols-1 lg:grid-cols-8 ">
+      <main className="lg:pl-28 grid grid-cols-1 lg:grid-cols-1 p-4 pb-20" >
         <div className="lg:col-span-6 ">
           <Header />
-
           <MenuCoffee />
         </div>
         <Car />
-
-
-
-
+        <Content />
+        <Content />
+        <Content />
+        <Content />
+        <Content />
       </main>
     </div>
   )

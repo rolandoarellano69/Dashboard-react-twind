@@ -1,5 +1,6 @@
 import { RiSearchLine } from 'react-icons/ri'
 import Tabs from './Tabs'
+import Content from './Content'
 
 function Header() {
   return (
@@ -7,7 +8,7 @@ function Header() {
     <header className="p-4">
       {/*header*/}
 
-      <div className='flex flex-col md:flex-row md:justify-between md:items-centergap-4 mb-6'>
+      <div className='flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6'>
 
         <div>
           <h1 className='text-2xl text-gray-300'>COFFI APP</h1>
@@ -27,6 +28,9 @@ function Header() {
       {/*Tabs*/}
       
       <Tabs />
+
+      
+      
     </header>
 
 
