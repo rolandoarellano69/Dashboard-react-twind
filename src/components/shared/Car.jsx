@@ -1,5 +1,5 @@
 
-import { RiShoppingCartFill, RiCloseLine } from 'react-icons/ri'
+import { RiCloseLine } from 'react-icons/ri'
 function Car() {
   return (
     //Orders 

@@ -1,5 +1,4 @@
 import React from 'react'
-import Content from './Content'
 import {RiArrowDropDownLine} from 'react-icons/ri'
 
 function MenuCoffee() {

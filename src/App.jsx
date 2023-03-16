@@ -5,7 +5,6 @@ import { CgCoffee } from "react-icons/cg"
 import Header from "./components/shared/Header"
 import Car from "./components/shared/Car"
 import MenuCoffee from "./components/shared/MenuCoffee"
-import Tabs from "./components/shared/Tabs"
 import Content from "./components/shared/Content"
 
 

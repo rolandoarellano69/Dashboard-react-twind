@@ -1,5 +1,4 @@
 
-
 function Content() {
   return (
     <div className="p-8 grid grid-cols-1 md:grid-cols-3 gap-8 lg:grid-col-3 ">

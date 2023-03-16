@@ -1,6 +1,5 @@
 import { RiSearchLine } from 'react-icons/ri'
 import Tabs from './Tabs'
-import Content from './Content'
 
 function Header() {
   return (
@@ -24,13 +23,8 @@ function Header() {
           </div>
         </form>
       </div>
-
       {/*Tabs*/}
-      
       <Tabs />
-
-      
-      
     </header>
 
 
