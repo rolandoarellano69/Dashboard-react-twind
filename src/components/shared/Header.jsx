@@ -25,6 +25,7 @@ function Header() {
       </div>
       {/*Tabs*/}
       <Tabs />
+      <Tabs />
     </header>
 
 
