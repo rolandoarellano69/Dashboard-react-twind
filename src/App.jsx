@@ -6,6 +6,7 @@ import Header from "./components/shared/Header"
 import Car from "./components/shared/Car"
 import MenuCoffee from "./components/shared/MenuCoffee"
 import Content from "./components/shared/Content"
+import Pay from "./components/shared/Pay"
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
         <Content />
         </div>
         <Car />
+        <Pay />
        
     
       </main>

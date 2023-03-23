@@ -1,10 +1,10 @@
 
-import { RiCloseLine } from 'react-icons/ri'
+import { RiCloseLine,RiDeleteBin6Line } from 'react-icons/ri'
 function Car() {
   return (
     //Orders 
     <div className="lg:col-span-2  fixed lg:static right-0 top-0 text-white bg-[#1f1d2b] w-full h-full">
-      <div className='relative text-gray-300 pt-16 p-10'>
+      <div className='relative h-full text-gray-300 pt-16 p-10'>
 
         <RiCloseLine className="text-2xl absolute left-4 top-4 p-3 box-content text-gray-300 bg-[#262837] rounded-full " />
 
@@ -20,35 +20,122 @@ function Car() {
         {/*car*/}
         <div>
 
-        <div className='grid grid-cols-6 mb-4'>
-          <h5 className='col-span-4'>Productos</h5>
+          <div className='grid grid-cols-6 mb-4 p-4'>
+            <h5 className='col-span-4'>Productos</h5>
 
-          <h5>qly</h5>
+            <h5>Cant</h5>
 
-          <h5>Precio</h5>
+            <h5>Precio</h5>
+
+          </div>
           
-        </div>
           {/*product*/}
-          <div className='bg-[#262837] p-4 rounded-xl'>
-          <div className='grid grid-cols-6'>
-            <div className='flex items-center gap-3 col-span-4'>
-              <img src="coffe_2.png" alt="" className='w-12 h-12 object-cover' />
+          <div className='bg-[#262837] p-4 rounded-xl mb-4'>
+            <div className='grid grid-cols-6 mb-4'>
+              <div className='flex items-center gap-3 col-span-4'>
+                <img src="coffe_2.png" alt="" className='w-10 h-10 object-cover' />
+                <div>
+                  <h5 className='text-sm'>Café Americano... </h5>
+                  <p className='text-xs text-gray-500'>$65.00</p>
+                </div>
+              </div>
+              {/* note */}
+              <div >
+
+                <span>2</span>
+              </div>
               <div>
-              <h5>Café Americano... </h5>
-              <p>$65.00</p>
+                <span>$60.00</span>
+              </div>
+
+            </div>
+            {/* note */}
+            <div className='grid grid-cols-6 items-center  gap-2'>
+              <form className='col-span-5'>
+                <input type="text" placeholder='Agrega una nota...' className='bg-[#1f1d2b] text-sm text-gray-500 w-full py-1 px-4 rounded-lg outline-none' />
+              </form>
+              <div className=' text-center'>
+                <button className=' border border-red-500 p-2 rounded-lg text-red-500'> <RiDeleteBin6Line />    </button>
               </div>
             </div>
-            <div>
-              
-              <span>2</span>
+          </div>
+          <div className='bg-[#262837] p-4 rounded-xl mb-4'>
+            <div className='grid grid-cols-6 mb-4'>
+              <div className='flex items-center gap-3 col-span-4'>
+                <img src="coffe_2.png" alt="" className='w-10 h-10 object-cover' />
+                <div>
+                  <h5 className='text-sm'>Café Americano... </h5>
+                  <p className='text-xs text-gray-500'>$65.00</p>
+                </div>
+              </div>
+              {/* note */}
+              <div >
+
+                <span>2</span>
+              </div>
+              <div>
+                <span>$60.00</span>
+              </div>
+
             </div>
-            <div>
-              <span>$60.00</span>
+            {/* note */}
+            <div className='grid grid-cols-6 items-center  gap-2'>
+              <form className='col-span-5'>
+                <input type="text" placeholder='Agrega una nota...' className='bg-[#1f1d2b] text-sm text-gray-500 w-full py-1 px-4 rounded-lg outline-none' />
+              </form>
+              <div className=' text-center'>
+                <button className=' border border-red-500 p-2 rounded-lg text-red-500'> <RiDeleteBin6Line />    </button>
+              </div>
+            </div>
+          </div>
+          <div className='bg-[#262837] p-4 rounded-xl mb-4'>
+            <div className='grid grid-cols-6 mb-4'>
+              <div className='flex items-center gap-3 col-span-4'>
+                <img src="coffe_2.png" alt="" className='w-10 h-10 object-cover' />
+                <div>
+                  <h5 className='text-sm'>Café Americano... </h5>
+                  <p className='text-xs text-gray-500'>$65.00</p>
+                </div>
+              </div>
+              {/* note */}
+              <div >
+
+                <span>2</span>
+              </div>
+              <div>
+                <span>$60.00</span>
+              </div>
+
+            </div>
+            {/* note */}
+            <div className='grid grid-cols-6 items-center  gap-2'>
+              <form className='col-span-5'>
+                <input type="text" placeholder='Agrega una nota...' className='bg-[#1f1d2b] text-sm text-gray-500 w-full py-1 px-4 rounded-lg outline-none' />
+              </form>
+              <div className=' text-center'>
+                <button className=' border border-red-500 p-2 rounded-lg text-red-500'> <RiDeleteBin6Line />    </button>
+              </div>
             </div>
           </div>
           
+          {/*pay*/}
+          <div className='bg-[#262837] p-4 w-full rounded-t-2xl absolute bottom-0 left-0 '>
+          <div className='flex items-center justify-between mb-4'>
+            <span className='text-gray-400'>Descuentos</span>
+            <span>$0.00 MXN</span>
+
+          </div>
+          <div className='flex items-center justify-between mb-6'>
+            <span className='text-gray-400'>Subtotal</span>
+            <span>$65.00 MXN</span>
+          </div>
+          <div className='mb-2'>
+            <button className='text-gray-100 bg-blue-500 w-full rounded-lg  py-2 px-4 '>
+              Pagar
+            </button>
           </div>
 
+          </div>
         </div>
       </div>
     </div>
