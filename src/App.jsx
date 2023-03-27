@@ -11,14 +11,21 @@ import Pay from "./components/shared/Pay"
 
 function App() {
   const [showMenu, setShowMenu] = useState(false)
+  const [showOrder, setShowOrder] = useState(false)
 
 
   const toggleMenu = () => {
 
     setShowMenu(!showMenu);
+    setShowOrder(false);
 
   }
+const toggleOrder = () => {
 
+    setShowOrder(!showOrder);
+    setShowMenu(false);
+
+  }
 
 
   return (
@@ -32,7 +39,7 @@ function App() {
         <button className="p-2">
           <CgCoffee />
         </button>
-        <button className="p-2">
+        <button  onClick={toggleOrder} className="p-2">
           <RiFileList3Line />
         </button>
         <button onClick={toggleMenu} className="p-2">
@@ -46,7 +53,7 @@ function App() {
           <MenuCoffee />
         <Content />
         </div>
-        <Car />
+        <Car showOrder={showOrder}/>
         <Pay />
        
     
