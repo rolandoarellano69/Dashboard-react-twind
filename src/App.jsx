@@ -48,7 +48,7 @@ const toggleOrder = () => {
         </button>
       </nav>
       <main className="lg:pl-32 grid grid-cols-1 lg:grid-cols-8 p-4 pb-20" >
-        <div className="lg:col-span-6 p-8">
+        <div className="lg:col-span-6 md:p-8 p-4">
           <Header />
           <MenuCoffee />
         <Content />

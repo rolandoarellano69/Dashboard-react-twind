@@ -14,13 +14,13 @@ const Car = (props) => {
 
   return (
     //Orders 
-    <div className= {`lg:col-span-2  fixed lg:static  top-0 text-white bg-[#1f1d2b] w-full h-full
+    <div className= {`lg:col-span-2 fixed  top-0 lg:static text-white bg-[#1f1d2b] w-full lg:w-96 lg:right-0 h-full
    ${showOrder ? 'left-0' : '-left-full'} transition-all duration-500 z-50'`}
     >
      
 
-      <div className='relative h-full text-gray-300 pt-16 p-8 '>
-        <RiCloseLine onClick={toggleOrder} className="text-2xl absolute left-4 top-4 p-3 box-content text-gray-300 bg-[#262837] rounded-full "
+      <div className='relative h-full lg:pt-8 text-gray-300 pt-16 p-8 '>
+        <RiCloseLine onClick={toggleOrder} className="lg:hidden text-2xl absolute left-4 top-4 p-3 box-content text-gray-300 bg-[#262837] rounded-full "
         
         />
         <h1 className='text-2xl my-4'> Pedidos</h1>
@@ -42,7 +42,7 @@ const Car = (props) => {
           </div>
 
           {/* products */}
-          <div className=' h-[400px] overflow-scroll'>
+          <div className=' h-[400px] md:h-[700px] lg:h-[500] overflow-scroll'>
 
             {/*product*/}
             <div className='bg-[#262837] p-4 rounded-xl mb-4'>
